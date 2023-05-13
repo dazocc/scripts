@@ -16,7 +16,7 @@ begin
    v_sql := 'select T_OBJECT_XPTO(X.NUM, X.LIN)
             from (
                 select ''1'' num, ''test'' lin  from dual 
-                union
+                union all
                 select ''2'', ''test 2'' from dual) X';
 
     EXECUTE IMMEDIATE v_sql  bulk collect into v_tabela;
