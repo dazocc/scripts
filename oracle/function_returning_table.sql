@@ -4,7 +4,7 @@ create or replace TYPE T_OBJECT_XPTO as object (
 );
 /
 
-create or replace NONEDITIONABLE TYPE T_TABLE_XPTO as table of T_OBJECT_XPTO;
+create or replace TYPE T_TABLE_XPTO as table of T_OBJECT_XPTO;
 /
 
 create or replace function xpto return T_TABLE_XPTO is
